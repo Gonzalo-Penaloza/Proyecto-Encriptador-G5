@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Encriptador Challenge - Alura</title>
+   <link rel="shortcut icon" href="./img/candado.png" type="image/x-icon">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+
+<body>
+   <header>
+      <a href="https://www.aluracursos.com/" class="home-alura" target="_blank">
+         <img src="./img/logonew.png" alt="logo-alura" id="logo-nav">
+      </a>
+      </div>
+      <nav>
+         <ul>
+            <li><a href="https://discord.com/invite/23xvmadfSa" class="nav-link"><i
+                     class="fa-brands fa-discord fa-2xl"></i></a></li>
+         </ul>
+      </nav>
+      <div id="cont-toggle">
+         <img src="./img/4122410.jpg" alt="cielo-animado" id="sky-blue">
+         <div class="toggle" id="toggle">
+            <img src="./img/sun.png" alt="sol" id="img-toggle">
+         </div>
+      </div>
+   </header>
+   <div class="container">
+      <div class="titulo-home">
+         <h1 id="title-rep"><span id="span-title">ENCRIPTADOR - CHALLENGE ALURA LATAM</span></h1>
+      </div>
+      <div class="encriptar">
+         <div class="cajadetexto">
+            <textarea name="texto" id="texto" class="texto" onkeypress="return soloLetras(event)"
+               placeholder="Ingresa el texto..."></textarea>
+            <div class="under-btns">
+               <div class="terminos">
+                  <ul class="list-under">
+                     <p id="text-term"> Solo letras minusculas</p>
+                     <p id="text-term"> Sin acentos/tildes</p>
+                  </ul>
+               </div>
+               <div id="arrowSwitch">
+                  <div class="arrowtoggle" id="togglex">
+                     <img src="./img/open2.png" alt="sol" id="img-togglex">
+                  </div>
+               </div>
+               <button class="btn-encriptar" id="enc" type="button">
+                  Encriptar
+               </button>
+               <button class="btn-decriptar" id="dec" type="button">
+                  Desencriptar
+               </button>
+            </div>
+         </div>
+         <div class="encriptado">
+            <div class="cont-mun">
+               <img src="img/Muñeco.png" alt="" id="img-home" class="img-home">
+            </div>
+            <div class="mensaje-encriptado">
+               <h2 id="titulo-mensaje">Ningun mensaje encontrado</h2>
+               <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+               <div class="utility-btns">
+                  <input type="button" value="Limpiar" class="btn-limpiar" onclick="clearTextArea()">
+                  <input type="button" value="Copiar" class="btn-copiar" onclick="copyClipboard()">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <footer>
+      <p class="p-footer">Hecho por Gonzalo Peñaloza - Curso Alura ONE G5</p>
+      <ul>
+         <li><a href="https://github.com/Taddx" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a></li>
+         <li><a href="https://www.linkedin.com/in/gonzalo-penaloza/" target="_blank"><i
+                  class="fa-brands fa-linkedin fa-xl"></i></a></li>
+         <li><a href="https://www.instagram.com/gonzalopenaloza_/" target="_blank"><i
+                  class="fa-brands fa-instagram fa-xl"></i></a></li>
+      </ul>
+
+   </footer>
+   <script src="index.js"></script>
+   <script src="https://kit.fontawesome.com/d168e18a02.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
