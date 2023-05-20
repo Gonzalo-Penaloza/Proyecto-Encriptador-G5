@@ -268,7 +268,7 @@ function handleMediaQueryChange() {
 }
 
 function animate() {
-    if (path === "/index.html") {
+    if (path === "/Proyecto-Encriptador-G5/") {
         title.classList.add('index');
 
         if (window.innerWidth >= 1470) {
