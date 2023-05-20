@@ -95,19 +95,13 @@ function encriptar() {
         .replace(/u/gi, "ufat");
 
     if (textUser.value.trim().length != 0){
-        let timerInterval;
         Swal.fire({
             title: 'Encriptando texto!',
             timer: 750,
             didOpen: () => {
-                Swal.showLoading()
-                const b = Swal.getHtmlContainer().querySelector('b')
-                timerInterval = setInterval(() => {
-                    b.textContent = Swal.getTimerLeft()
-                }, 100)
+                Swal.showLoading() 
             },
-            willClose: () => {
-                clearInterval(timerInterval)
+            willClose: () => {     
                 Swal.fire({
                     icon: 'success',
                     title: 'Texto encriptado!',
@@ -161,19 +155,13 @@ function desencriptar() {
         .replace(/ufat/gi, "ufat");
 
     if (textUser.value.length != 0) {
-        let timerInterval;
         Swal.fire({
             title: 'Desencriptando texto!',
             timer: 750,
             didOpen: () => {
                 Swal.showLoading()
-                const b = Swal.getHtmlContainer().querySelector('b')
-                timerInterval = setInterval(() => {
-                    b.textContent = Swal.getTimerLeft()
-                }, 100)
             },
             willClose: () => {
-                clearInterval(timerInterval)
                 Swal.fire({
                     icon: 'success',
                     title: 'Texto desencriptado!',
