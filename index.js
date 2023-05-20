@@ -163,7 +163,7 @@ function desencriptar() {
     if (textUser.value.length != 0) {
         let timerInterval;
         Swal.fire({
-            title: 'Encriptando texto!',
+            title: 'Desencriptando texto!',
             timer: 750,
             didOpen: () => {
                 Swal.showLoading()
@@ -176,7 +176,7 @@ function desencriptar() {
                 clearInterval(timerInterval)
                 Swal.fire({
                     icon: 'success',
-                    title: 'Texto encriptado!',
+                    title: 'Texto desencriptado!',
                     timer: 1250,
                 })
             }
