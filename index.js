@@ -152,7 +152,7 @@ function desencriptar() {
         .replace(/imes/gi, "i")
         .replace(/ai/gi, "a")
         .replace(/ober/gi, "o")
-        .replace(/ufat/gi, "ufat");
+        .replace(/ufat/gi, "u");
 
     if (textUser.value.length != 0) {
         Swal.fire({
